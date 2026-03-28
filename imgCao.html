@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMGCAO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="homeAPI.html">Página Principal (Home)</a>
+      <a href="CEP.html">Consultar CEP</a>
+      <a href="clima.html">Previsão do Tempo</a>
+      <a href="dolar.html">Cotação do Dólar</a>
+      <a href="imgCao.html">Gerador de Cachorrinhos</a>
+      <a href="paises.html">Informações de Países</a>
+    </nav>
+
+    <main class="container-home" style="text-align: center">
+      <h1>Gerador de Cachorrinhos 🐶</h1>
+      <p>
+        Clique no botão abaixo para receber uma foto aleatória de um doguinho!
+      </p>
+
+      <input
+        type="button"
+        id="btnCachorro"
+        onclick="gerarCachorro()"
+        value="Gerar Foto!"
+      />
+
+      <hr style="margin: 20px 0" />
+
+      <div
+        style="
+          min-height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <p
+          id="mensagemCarregando"
+          style="display: none; font-weight: bold; color: #64748b"
+        >
+          Buscando doguinho...
+        </p>
+
+        <img
+          id="fotoCachorro"
+          src=""
+          alt="Foto de um cachorro fofo"
+          style="
+            display: none;
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          "
+        />
+      </div>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>

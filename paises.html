@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAISES</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="homeAPI.html">Página Principal (Home)</a>
+      <a href="CEP.html">Consultar CEP</a>
+      <a href="clima.html">Previsão do Tempo</a>
+      <a href="dolar.html">Cotação do Dólar</a>
+      <a href="imgCao.html">Gerador de Cachorrinhos</a>
+      <a href="paises.html">Informações de Países</a>
+    </nav>
+
+    <main class="container-home">
+      <h1>Explorador de Países</h1>
+
+      <label for="nomePais"
+        >Digite o nome do país (ex: Brasil, Japan, Canada):</label
+      ><br />
+      <input type="text" id="nomePais" placeholder="Nome do país" /><br /><br />
+
+      <input type="button" onclick="consultarPais()" value="Pesquisar País" />
+
+      <hr style="margin: 20px 0" />
+
+      <h3>Resultados:</h3>
+
+      <img
+        id="bandeira"
+        src=""
+        alt="Bandeira do País"
+        style="
+          display: none;
+          width: 150px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        "
+      /><br /><br />
+
+      <label>Capital:</label><br />
+      <input type="text" id="capitalPais" readonly /><br /><br />
+
+      <label>População:</label><br />
+      <input type="text" id="populacaoPais" readonly /><br /><br />
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>

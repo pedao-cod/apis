@@ -1,0 +1,141 @@
+/* NAVEGAÇÃO */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+nav {
+  background-color: #1e293b;
+  height: 100px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+}
+
+/* HOME */
+
+.container-home {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  color: #334155;
+}
+
+.container-home h1 {
+  text-align: center;
+  color: #1e293b;
+}
+
+.descricao {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lista-recursos {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-recursos li {
+  background-color: #f8fafc;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #3b82f6;
+}
+
+.dica {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+/* paises */
+
+label {
+  font-weight: 600;
+  color: #475569;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1e293b;
+  background-color: #f8fafc;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+  box-sizing: border-box;
+}
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  background-color: #ffffff;
+}
+
+input[readonly] {
+  background-color: #e2e8f0;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+input[type="button"] {
+  background-color: #3b82f6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+}
+
+input[type="button"]:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+input[type="button"]:active {
+  transform: translateY(0);
+}

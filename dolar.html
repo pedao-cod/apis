@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOLAR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="homeAPI.html">Página Principal (Home)</a>
+      <a href="CEP.html">Consultar CEP</a>
+      <a href="clima.html">Previsão do Tempo</a>
+      <a href="dolar.html">Cotação do Dólar</a>
+      <a href="imgCao.html">Gerador de Cachorrinhos</a>
+      <a href="paises.html">Informações de Países</a>
+    </nav>
+
+    <label for="DOLAR">MOEDA</label><br />
+    <input type="text" id="nomeMoeda" readonly /><br /><br />
+    <label for="valorAtual">Valor atual</label><br />
+    <input type="text" name="valorAtual" id="valorAtual" readonly /><br /><br />
+
+    <label for="valorMaximo">Máxima do dia (R$):</label><br />
+    <input
+      type="text"
+      name="valorMaximo"
+      id="valorMaximo"
+      readonly
+    /><br /><br />
+
+    <h2>Conversor Dólar/Real</h2>
+
+    <label for="cotacaoAtual">Cotação Atual (R$):</label><br />
+    <input type="text" id="cotacaoAtual" readonly /><br /><br />
+
+    <label for="valorDolar">Valor em Dólar (US$):</label><br />
+    <input
+      type="number"
+      id="valorDolar"
+      placeholder="Ex: 100"
+      oninput="converter()"
+    /><br /><br />
+
+    <label for="valorReal">Valor Convertido em Real (R$):</label><br />
+    <input type="text" id="valorReal" readonly /><br /><br />
+
+    <input type="button" onclick="consultarDolar()" value="consultar" />
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

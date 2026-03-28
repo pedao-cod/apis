@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="homeAPI.html">Página Principal (Home)</a>
+      <a href="CEP.html">Consultar CEP</a>
+      <a href="clima.html">Previsão do Tempo</a>
+      <a href="dolar.html">Cotação do Dólar</a>
+      <a href="imgCao.html">Gerador de Cachorrinhos</a>
+      <a href="paises.html">Informações de Países</a>
+    </nav>
+
+    <h1>API CEP</h1>
+    <label for="CEP">Informe o CEP para consulta</label><br />
+    <input type="text" id="CEP" placeholder="Informe o CEP" /><br /><br />
+    <label for="Logradouro">Logradouro</label><br />
+    <input type="text" name="Logradouro" id="Logradouro" /><br /><br />
+
+    <label for="bairro">Bairro</label><br />
+    <input type="text" name="bairro" id="bairro" /><br /><br />
+
+    <label for="localidade">Localidade</label><br />
+    <input type="text" name="localidade" id="localidade" /><br /><br />
+
+    <label for="uf">UF</label><br />
+    <input type="text" name="uf" id="uf" /><br /><br />
+
+    <input type="button" onclick="consultarCEP()" value="consultar" />
+    <script src="script.js" defer></script>
+  </body>
+</html>

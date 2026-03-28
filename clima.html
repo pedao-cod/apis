@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLIMA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="homeAPI.html">Página Principal (Home)</a>
+      <a href="CEP.html">Consultar CEP</a>
+      <a href="clima.html">Previsão do Tempo</a>
+      <a href="dolar.html">Cotação do Dólar</a>
+      <a href="imgCao.html">Gerador de Cachorrinhos</a>
+      <a href="paises.html">Informações de Países</a>
+    </nav>
+
+    <main class="container-home">
+      <h1>Previsão do Tempo ⛅</h1>
+
+      <label for="nomeCidade">Digite o nome da Cidade:</label><br />
+      <input
+        type="text"
+        id="nomeCidade"
+        placeholder="Ex: Aracaju, São Paulo..."
+      /><br /><br />
+
+      <input type="button" onclick="consultarClima()" value="Buscar Clima" />
+
+      <hr style="margin: 20px 0" />
+
+      <h3>Resultados:</h3>
+
+      <label>Temperatura Atual:</label><br />
+      <input
+        type="text"
+        id="temperatura"
+        readonly
+        placeholder="--"
+      /><br /><br />
+
+      <label>Velocidade do Vento:</label><br />
+      <input type="text" id="vento" readonly placeholder="--" /><br /><br />
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
